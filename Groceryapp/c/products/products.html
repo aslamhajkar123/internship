@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Harvest Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">🛒 Harvest Hub  </h1>
+        <nav>
+            <input type="text" placeholder="Search for groceries..." class="search-bar">
+            <a href="products.html">Products</a>
+            <a href="cart/cart.html" class="cart-icon" id="cart-link">🛒 <span id="cart-count">0</span></a>
+            <button class="sign" onclick="window.location.href='../index.html'">Logout</button>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <button class="clear-filters">Clear all filters</button>
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="range" min="0" max="10000" step="100">
+            </div>
+            <div class="filter-group">
+            
+                <label><input type="checkbox"> Atta & Flours</label>
+                <label><input type="checkbox"> Biscuits</label>
+                <label><input type="checkbox"> Dental Care</label>
+                <label><input type="checkbox"> Hair Oils</label>
+                <label><input type="checkbox"> Handwash</label>
+                <label><input type="checkbox"> Indian Sweets</label>
+                <label><input type="checkbox"> Noodles</label>
+                <label><input type="checkbox"> Rice & Grains</label>
+                <label><input type="checkbox"> Spices</label>
+            </div>
+        </aside>
+
+        <main class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="nutri-choice.jpg" alt="Nutri Choice Biscuit">
+                    <h3>Nutri Choice Biscuit</h3>
+                    <p class="category">Snacks</p>
+                    <p class="price">₹4.00</p>
+                    <button class="add-to-cart" data-name="Nutri Choice Biscuit" data-price="4.00" data-image="nutri-choice.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="mango.jpg" alt="Mango Juice">
+                    <h3>Mango Juice 1 ltr</h3>
+                    <p class="category">Drinks</p>
+                    <p class="price">₹10.00</p>
+                    <button class="add-to-cart" data-name="Mango Juice 1 ltr" data-price="10.00" data-image="mango.jpg">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="amul-butter.jpg" alt="Amul Butter">
+                    <h3>Amul Butter 100g</h3>
+                    <p class="category">Milk Products</p>
+                    <p class="price">₹40.00</p>
+                    <button class="add-to-cart" data-name="Amul Butter 100g" data-price="40.00" data-image="amul-butter.jpg">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="icecream.jpg" alt="Vanilla icecream">
+                    <h3>Vanilla Icecream</h3>
+                    <p class="category">Desserts</p>
+                    <p class="price">₹50.00</p>
+                    <button class="add-to-cart" data-name="Vanilla Icecream" data-price="50.00" data-image="icecream.jpg">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="amul-milk.jpg" alt="Amul Milk">
+                    <h3>Amul Milk 500ml</h3>
+                    <p class="category">Milk Products</p>
+                    <p class="price">₹28.00</p>
+                    <button class="add-to-cart" data-name="Amul Milk 500ml" data-price="28.00" data-image="amul-milk.jpg">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="amul-dahi.jpg" alt="Amul Dahi">
+                    <h3>Amul Masti Dahi 200g</h3>
+                    <p class="category">Milk Products</p>
+                    <p class="price">₹19.00</p>
+                    <button class="add-to-cart" data-name="Amul Masti Dahi 200g" data-price="19.00" data-image="amul-dahi.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
